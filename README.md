@@ -36,6 +36,18 @@ RSE will listen on local port 8000; you can test that it is running with
 `curl http://localhost:8000/health` or similar. The response body will
 read "OK".
 
+## Building for Deployment
+
+If you're on a debian-esque system, you can build using the included
+Makefile:
+
+```
+make builddeps  # install build dependencies
+make wheel      # build wheel
+make deb        # build deb package
+make deb_deps   # build debs for dependencies that aren't in stock apt
+```
+
 ## Features
 
 * Clients communicate over channels and sub-channels

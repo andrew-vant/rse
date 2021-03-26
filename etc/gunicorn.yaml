@@ -1,0 +1,4 @@
+bind: unix:///var/run/rse/rse.sock
+loglevel: info
+accesslog: None
+errorlog: /var/log/rse/gunicorn.log

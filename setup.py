@@ -15,6 +15,10 @@ scm_version_options = {
         'fallback_version': 'UNKNOWN',
         }
 
+data_files = {
+        'rse': ['etc/rse.yaml'],
+        }
+
 setup(
     name="rse",
     description="Real Simple Events",
